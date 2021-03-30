@@ -1,3 +1,53 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .hero
+    padding-top: 20px
+    min-height: 680px
+    &__title
+      font-size: 36px
+    &__decription
+      max-width: 410px
+    &__bg
+      &-2
+        width: 600px
+      &-3
+        right: 405px
+        bottom: 90px
+        width: 190px
+      &-4
+        right: 545px
+        bottom: 440px
+@media (max-width: 992px)
+  .container
+    max-width: 760px
+    padding: 0 10px
+  .hero
+    padding-top: 10px
+    min-height: 660px
+    &__title
+      font-size: 36px
+      max-width: 100%
+    &__small
+      display: inline-block
+    &__decription
+      max-width: 400px
+      font-size: 16px
+      margin-bottom: 45px
+    &__bg
+      &-1
+        width: 250px
+        bottom: 55px
+      &-2
+        width: 450px
+      &-3
+        right: 340px
+        width: 150px
+      &-4
+        right: 425px
+        bottom: 360px
+        width: 90px
+        height: 90px
 @media (min-width: 993px)
   .header
     &-left
@@ -21,6 +71,11 @@
     &__down
       &:hover
         border-color: $secondary
+    &__button
+      &:hover
+        box-shadow: 0 0 5px $secondary
+        transition: .2s
+  .modal
     &__button
       &:hover
         box-shadow: 0 0 5px $secondary
