@@ -1,6 +1,4 @@
 .hero
-  position: relative
-  min-height: 710px
   background-color: $bg
   padding-top: 27px
   overflow: hidden
@@ -41,28 +39,14 @@
     background: none
     border-radius: 2000px
     padding: 19px 18px 16px 18px
+    width: 54px
+    height: 56px
     display: block
     border: 2px solid $text-color
   &__bg
-    &-1
-      position: absolute
-      right: 0
-      bottom: 20px
-    &-2
-      position: absolute
-      right: 0
-      bottom: 114px
-      &--mobile
-        &--visible
-          display: none
-    &-3
-      position: absolute
-      right: 508px
-      bottom: 88px
-    &-4
-      position: absolute
-      right: 652px
-      bottom: 460px
-      background-image: url('../img/pattern.png')
-      width: 102px
-      height: 118px
+    position: absolute
+    right: 0
+    bottom: 21px
+    &--mobile
+      &--visible
+        display: none
