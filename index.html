@@ -21,7 +21,7 @@
             ><img src="img/logo-top.png" alt="" class="header__logo"
           /></a>
           <div class="header-right">
-            <nav class="navbar">
+            <nav class="navbar navbar--mobile--fixed">
               <ul class="navbar__ul">
                 <li class="navbar__item navbar__item--mr--14">
                   <a href="#" class="navbar__link">Домой</a>
@@ -60,8 +60,14 @@
               </ul>
             </nav>
             <button class="header__button" data-toggle="modal">Получить</button>
+            
           </div>
-          <!-- /.header-left -->
+          <!-- /.header-right -->
+          <button class="menu-button header__menu-button">
+            <span class="menu-button__line"></span
+            ><span class="menu-button__line"></span
+            ><span class="menu-button__line"></span>
+          </button>
         </div>
         <!-- /.header-top-wrapper -->
 
@@ -97,6 +103,7 @@
         <!-- /.hero -->
       </div>
       <!-- /.container -->
+      
     </header>
     <div class="modal">
       <div class="modal__overlay"></div>

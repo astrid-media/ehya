@@ -1,12 +1,15 @@
 .header
   background-color: $bg
   position: relative
-  height: 843px
+  min-height: 843px
   &-wrapper
     display: flex
     align-items: center
     justify-content: space-between
     padding: 26px 0px 53px 0
+  &__menu
+    &-button
+      display: none
   &__button
     font-weight: 700
     font-size: 16px
@@ -79,3 +82,7 @@
       font-weight: 600
       font-size: 16px
       line-height: 22px
+.dropdown
+  &:hover &-content
+    transition: .2s
+    display: block
