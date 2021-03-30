@@ -42,3 +42,37 @@
     padding: 11px 23px
     border-radius: 8px
     margin-left: 53px
+.dropdown
+  padding: 0 5px
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    display: block
+    top: 50%
+    left: 100%
+    transform: translateY(-50%)
+    background-image: url('../img/angle-down.png')
+    background-repeat: no-repeat
+    width: 9px
+    height: 16px
+    z-index: 99
+    background-position: center
+    background-size: 9px
+  &-content
+    display: none
+    position: absolute
+    background-color: $light
+    min-width: 120px
+    padding: 0
+    list-style: none
+    z-index: 1
+    color: $primary
+    &__item
+      padding: 5px
+    &__link
+      color: inherit
+      text-decoration: none
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
