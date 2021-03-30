@@ -58,7 +58,7 @@
                 </li>
               </ul>
             </nav>
-            <button class="header__button" data-toggle="modal">Получить</button>
+            <button class="header__button">Получить</button>
           </div>
           <!-- /.header-left -->
         </div>
@@ -68,82 +68,10 @@
     </header>
     <div class="hero">
       <div class="container">
-        <div class="hero-text">
-          <h1 class="hero__title">
-            Номер #1,
-            <span class="hero__small">Южная Азия</span>
-            Агенство цифровых продуктов
-          </h1>
-          <p class="hero__decription">
-            Мы даем результаты, помогающие Вам добиться экономии средств и
-            времени без риска или накладных расходов на управление
-          </p>
-        </div>
-        <!-- /.hero-text -->
-        <button class="hero__button">Наше портфолио</button>
-        <button class="hero__down">
-          <img src="img/down.svg" alt="Icon: Down" class="hero__icon" />
-        </button>
-        <img
-          src="img/bg-oval.png"
-          class="hero__bg-1"
-          alt="Image: Background oval"
-        />
-        <img src="img/macbook.png" alt="Image: Mackbook" class="hero__bg-2" />
-        <img src="img/iphone.png" alt="Image: Iphone" class="hero__bg-3" />
-        <div class="hero__bg-4"></div>
+        <div class="hero-text">Thank You</div>
       </div>
       <!-- /.container -->
     </div>
     <!-- /.hero -->
-    <div class="modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="icon: Close" />
-        </a>
-        <h3 class="modal__title modal__title--mb--3">Получить предложение</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Имя*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Телефон*"
-            name="phone"
-            required
-            minlength="18"
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="E-mail*"
-            name="email"
-            required
-            minlength="3"
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Сообщение"
-            name="message"
-          ></textarea>
-          <button class="button modal__button" name="request">Отправить</button>
-          <span class="modal__info">* Обязательные поля</span>
-        </form>
-      </div>
-      <!-- /.modal_modal__dialog -->
-    </div>
-    <!-- /.modal -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
