@@ -5,33 +5,6 @@
     align-items: center
     justify-content: space-between
     padding: 26px 0px 53px 0
-  &-left
-    display: flex
-    align-items: center
-    &__ul
-      display: flex
-      align-items: center
-      justify-content: space-between
-      min-width: 410px
-      padding: 0
-      list-style: none
-    &__item
-      margin-right: 24px
-      color: $primary
-      &:last-child
-        margin-right: 0
-      &--mr
-        &--14
-          margin-right: 14px
-        &--28
-          margin-right: 28px
-    &__link
-      position: relative
-      text-decoration: none
-      color: inherit
-      font-weight: 600
-      font-size: 16px
-      line-height: 22px
   &__button
     font-weight: bold
     font-size: 16px
@@ -42,6 +15,34 @@
     padding: 11px 23px
     border-radius: 8px
     margin-left: 53px
+  &-right
+    display: flex
+    align-items: center
+.navbar
+  &__ul
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 410px
+    padding: 0
+    list-style: none
+  &__item
+    margin-right: 24px
+    color: $primary
+    &:last-child
+      margin-right: 0
+    &--mr
+      &--14
+        margin-right: 14px
+      &--28
+        margin-right: 28px
+  &__link
+    position: relative
+    text-decoration: none
+    color: inherit
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
 .dropdown
   padding: 0 5px
   position: relative

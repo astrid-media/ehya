@@ -17,14 +17,14 @@
       <div class="container">
         <div class="header-wrapper">
           <img src="img/logo-top.png" alt="" class="header__logo" />
-          <div class="header-left">
-            <nav class="header-left__nav">
-              <ul class="header-left__ul">
-                <li class="header-left__item header-left__item--mr--14">
-                  <a href="#" class="header-left__link">Домой</a>
+          <div class="header-right">
+            <nav class="navbar">
+              <ul class="navbar__ul">
+                <li class="navbar__item navbar__item--mr--14">
+                  <a href="#" class="navbar__link">Домой</a>
                 </li>
-                <li class="header-left__item dropdown">
-                  <a href="#" class="header-left__link">Лэндинги</a>
+                <li class="navbar__item dropdown">
+                  <a href="#" class="navbar__link">Лэндинги</a>
                   <ul class="dropdown-content">
                     <li class="dropdown-content__item">
                       <a href="#" class="dropdown-content__link">Project 1</a>
@@ -37,10 +37,8 @@
                     </li>
                   </ul>
                 </li>
-                <li
-                  class="header-left__item header-left__item--mr--28 dropdown"
-                >
-                  <a href="#" class="header-left__link">Страницы</a>
+                <li class="navbar__item navbar__item--mr--28 dropdown">
+                  <a href="#" class="navbar__link">Страницы</a>
                   <ul class="dropdown-content">
                     <li class="dropdown-content__item">
                       <a href="#" class="dropdown-content__link">Page 1</a>
@@ -53,8 +51,8 @@
                     </li>
                   </ul>
                 </li>
-                <li class="header-left__item">
-                  <a href="#" class="header-left__link">Помощь</a>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">Помощь</a>
                 </li>
               </ul>
             </nav>
@@ -78,18 +76,28 @@
             Мы даем результаты, помогающие Вам добиться экономии средств и
             времени без риска или накладных расходов на управление
           </p>
+          <button class="hero__button">Наше портфолио</button>
+          <button class="hero__down">
+            <img src="img/down.svg" alt="Icon: Down" class="hero__icon" />
+          </button>
         </div>
         <!-- /.hero-text -->
-        <button class="hero__button">Наше портфолио</button>
-        <button class="hero__down">
-          <img src="img/down.svg" alt="Icon: Down" class="hero__icon" />
-        </button>
+
         <img
           src="img/bg-oval.png"
           class="hero__bg-1"
           alt="Image: Background oval"
         />
-        <img src="img/macbook.png" alt="Image: Mackbook" class="hero__bg-2" />
+        <img
+          src="img/macbook.png"
+          alt="Image: Mackbook"
+          class="hero__bg-2 hero__bg-2--mobile--hidden"
+        />
+        <img
+          src="img/macbook-mobile.png"
+          alt="Image: Mackbook"
+          class="hero__bg-2 hero__bg-2--mobile--visible"
+        />
         <img src="img/iphone.png" alt="Image: Iphone" class="hero__bg-3" />
         <div class="hero__bg-4"></div>
       </div>

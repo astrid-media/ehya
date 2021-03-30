@@ -1,4 +1,4 @@
-@media (max-width: 1200px)
+@media (max-width: 1220px)
   .container
     max-width: 960px
   .hero
@@ -26,10 +26,11 @@
     padding-top: 10px
     min-height: 660px
     &__title
-      font-size: 36px
+      font-size: 34px
       max-width: 100%
     &__small
       display: inline-block
+      font-size: 34px
     &__decription
       max-width: 400px
       font-size: 16px
@@ -48,6 +49,67 @@
         bottom: 360px
         width: 90px
         height: 90px
+@media (max-width: 767px)
+  .container
+    max-width: 560px
+    padding: 0 18px
+  .header
+    &-right
+      display: none
+  .hero
+    min-height: 820px
+    position: relative
+    &-text
+      text-align: center
+    &__decription
+      max-width: 100%
+    &__down
+      position: absolute
+      bottom: 30px
+      right: 50%
+      transform: translateX(50%)
+    &__bg
+      &-2
+        &--mobile
+          &--hidden
+            display: none
+          &--visible
+            display: block
+@media (max-width: 567px)
+  .container
+    width: 95%
+    padding: 0 10px
+  .header
+    &-wrapper
+      padding-bottom: 45px
+  .hero
+    min-height: 773px
+    &__title
+      font-size: 30px
+      line-height: 36px
+      margin-bottom: 7px
+    &__small
+      font-size: 30px
+      line-height: 36px
+      padding-top: 0
+    &__decription
+      line-height: 28px
+      margin-bottom: 18px
+    &__button
+      width: 220px
+      height: 48px
+      font-size: 16px
+      line-height: 22px
+      text-transform: capitalize
+    &__down
+      padding: 14px 15px
+    &__bg
+      &-1
+        width: 145px
+      &-3
+        width: 92px
+        left: -25px
+        bottom: 110px
 @media (min-width: 993px)
   .header
     &-left
