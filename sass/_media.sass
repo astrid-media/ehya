@@ -34,8 +34,8 @@
   .container
     max-width: 560px
     padding: 0 18px
-  .header
-    &-right
+  .navbar
+    &-wrapper
       display: none
     &__menu
       &-button
@@ -49,15 +49,33 @@
         flex-direction: column
         cursor: pointer
         outline: none
-  .navbar
+    &--mobile
+      &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        background-color: $bg
+        z-index: 100
+    &__button
+      margin-left: 0
+    &__item
+      margin-right: 0
+      margin-bottom: 15px
     &-bottom
-      display: none
       &--visible
         display: flex
         flex-direction: column
+        position: fixed
+        left: 0
+        right: 0
+        top: 102px
+        background-color: $light
+        align-items: center
     &__ul
       flex-direction: column
   .hero
+    margin-top: 102px
     &-text
       text-align: center
     &__decription
@@ -81,10 +99,10 @@
     padding: 0
   .header
     min-height: 930px
-    &-wrapper
-      padding-bottom: 45px
-      padding-left: 20px
-      padding-right: 20px
+  .navbar
+    padding-bottom: 45px
+    padding-left: 20px
+    padding-right: 20px
   .hero
     min-height: 770px
     &__title
@@ -111,7 +129,7 @@
       margin-bottom: 49px
     &__down
       padding: 14px 15px
-      bottom: 88px
+      bottom: 190px
       right: 50%
       transform: translateX(50%)
       width: 48px

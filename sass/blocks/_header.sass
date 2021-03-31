@@ -2,11 +2,13 @@
   background-color: $bg
   position: relative
   min-height: 843px
-  &-wrapper
-    display: flex
-    align-items: center
-    justify-content: space-between
-    padding: 26px 0px 53px 0
+.navbar
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 26px 0px 53px 0
+  &-bottom
+    display: none
   &__menu
     &-button
       display: none
@@ -20,12 +22,9 @@
     padding: 11px 23px
     border-radius: 8px
     margin-left: 53px
-  &-right
+  &-wrapper
     display: flex
     align-items: center
-.navbar
-  &-buttom
-    display: none
   &__ul
     display: flex
     align-items: center

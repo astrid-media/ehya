@@ -16,12 +16,12 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="navbar header-wrapper--fixed">
+        <div class="navbar navbar--mobile--fixed">
           <a href="/ehya"
             ><img src="img/logo-top.png" alt="" class="header__logo"
           /></a>
-          <div class="header-right">
-            <nav class="navbar navbar--mobile--fixed">
+          <div class="navbar-wrapper">
+            <nav>
               <ul class="navbar__ul">
                 <li class="navbar__item navbar__item--mr--14">
                   <a href="#" class="navbar__link">Домой</a>
@@ -59,13 +59,22 @@
                 </li>
               </ul>
             </nav>
-            <button class="header__button" data-toggle="modal">Получить</button>
+            <button class="navbar__button" data-toggle="modal">Получить</button>
             
           </div>
           <!-- /.header-right -->
           
+     
+          <button class="menu-button navbar__menu-button">
+            <span class="menu-button__line"></span
+            ><span class="menu-button__line"></span
+            ><span class="menu-button__line"></span>
+          </button>
+
+        </div>
+        <!-- /.header-top-wrapper -->
           <div class="navbar-bottom">
-            <nav class="navbar navbar--mobile--fixed">
+            <nav>
               <ul class="navbar__ul">
                 <li class="navbar__item navbar__item--mr--14">
                   <a href="#" class="navbar__link">Домой</a>
@@ -101,19 +110,12 @@
                 <li class="navbar__item">
                   <a href="#" class="navbar__link">Помощь</a>
                 </li>
+                <li class="navbar__item"><button class="navbar__button" data-toggle="modal">Получить</button></li>
               </ul>
             </nav>
-            <button class="header__button" data-toggle="modal">Получить</button>
+            
           </div>
           <!-- /.navbar-bottom -->
-          <button class="menu-button header__menu-button">
-            <span class="menu-button__line"></span
-            ><span class="menu-button__line"></span
-            ><span class="menu-button__line"></span>
-          </button>
-        </div>
-        <!-- /.header-top-wrapper -->
-
         <div class="hero">
           <div class="hero-text">
             <h1 class="hero__title">
