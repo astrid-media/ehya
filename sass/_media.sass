@@ -37,10 +37,6 @@
   .header
     &-right
       display: none
-      &--mobile
-        &--visible
-          display: flex
-          flex-direction: column
     &__menu
       &-button
         display: flex
@@ -54,6 +50,11 @@
         cursor: pointer
         outline: none
   .navbar
+    &-bottom
+      display: none
+      &--visible
+        display: flex
+        flex-direction: column
     &__ul
       flex-direction: column
   .hero
@@ -66,7 +67,7 @@
       bottom: 50px
     &__bg
       width: 400px
-      bottom: 10px
+      bottom: 0
   .menu
     &-button
       &__line
@@ -74,20 +75,24 @@
         height: 2px
         background-color: $primary
         border-radius: 30px
-@media (max-width: 567px)
+@media (max-width: 576px)
   .container
-    width: 95%
-    padding: 0 10px
+    width: 100%
+    padding: 0
   .header
     min-height: 930px
     &-wrapper
       padding-bottom: 45px
+      padding-left: 20px
+      padding-right: 20px
   .hero
     min-height: 770px
     &__title
       font-size: 30px
       line-height: 36px
       margin-bottom: 7px
+      padding-left: 20px
+      padding-right: 20px
     &__small
       font-size: 30px
       line-height: 36px
@@ -95,15 +100,18 @@
     &__decription
       line-height: 28px
       margin-bottom: 18px
+      padding-left: 20px
+      padding-right: 20px
     &__button
       width: 220px
       height: 48px
       font-size: 16px
       line-height: 22px
       text-transform: capitalize
+      margin-bottom: 49px
     &__down
       padding: 14px 15px
-      bottom: 30px
+      bottom: 88px
       right: 50%
       transform: translateX(50%)
       width: 48px
@@ -115,7 +123,7 @@
           display: none
         &--visible
           display: block
-          bottom: 42px
+          position: static
 @media (min-width: 993px)
   .header
     &-left

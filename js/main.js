@@ -48,7 +48,7 @@ $('.phone').mask('+7 (999) 999-99-99');
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
-  document.querySelector(".header-right").classList.toggle("header-right--mobile--visible");
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
 });
 
 });

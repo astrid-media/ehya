@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-wrapper">
+        <div class="navbar header-wrapper--fixed">
           <a href="/ehya"
             ><img src="img/logo-top.png" alt="" class="header__logo"
           /></a>
@@ -63,6 +63,49 @@
             
           </div>
           <!-- /.header-right -->
+          
+          <div class="navbar-bottom">
+            <nav class="navbar navbar--mobile--fixed">
+              <ul class="navbar__ul">
+                <li class="navbar__item navbar__item--mr--14">
+                  <a href="#" class="navbar__link">Домой</a>
+                </li>
+                <li class="navbar__item dropdown">
+                  <a href="#" class="navbar__link">Лэндинги</a>
+                  <ul class="dropdown-content">
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">Project 1</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">Project 2</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">Project 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item navbar__item--mr--28 dropdown">
+                  <a href="#" class="navbar__link">Страницы</a>
+                  <ul class="dropdown-content">
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">Page 1</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">Page 2</a>
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="#" class="dropdown-content__link">Page 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__button" data-toggle="modal">Получить</button>
+          </div>
+          <!-- /.navbar-bottom -->
           <button class="menu-button header__menu-button">
             <span class="menu-button__line"></span
             ><span class="menu-button__line"></span
@@ -83,6 +126,11 @@
               времени без риска или накладных расходов на управление
             </p>
             <button class="hero__button">Наше портфолио</button>
+             <img
+            src="img/hero-bg-mobile.png"
+            class="hero__bg hero__bg--mobile--visible"
+            alt="Image: Background"
+          />
             <a href="#" class="hero__down">
               <img src="img/down.svg" alt="Icon: Down" class="hero__icon" />
             </a>
@@ -93,11 +141,7 @@
             class="hero__bg hero__bg--mobile--hidden"
             alt="Image: Background"
           />
-          <img
-            src="img/hero-bg-mobile.png"
-            class="hero__bg hero__bg--mobile--visible"
-            alt="Image: Background"
-          />
+         
           </div>
         </div>
         <!-- /.hero -->
