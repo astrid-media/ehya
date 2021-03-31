@@ -26,9 +26,9 @@
                 <li class="navbar__item navbar__item--mr--14">
                   <a href="#" class="navbar__link">Домой</a>
                 </li>
-                <li class="navbar__item dropdown">
-                  <a href="#" class="navbar__link">Лэндинги</a>
-                  <ul class="dropdown-content">
+                <li class="navbar__item dropdown" > 
+                  <a href="#" class="navbar__link" >Лэндинги</a>
+                  <ul class="dropdown-content" id="myDropdown">
                     <li class="dropdown-content__item">
                       <a href="#" class="dropdown-content__link">Project 1</a>
                     </li>
@@ -40,9 +40,9 @@
                     </li>
                   </ul>
                 </li>
-                <li class="navbar__item navbar__item--mr--28 dropdown">
+                <li class="navbar__item navbar__item--mr--28 dropdown" >
                   <a href="#" class="navbar__link">Страницы</a>
-                  <ul class="dropdown-content">
+                  <ul class="dropdown-content" id="myDropdown">
                     <li class="dropdown-content__item">
                       <a href="#" class="dropdown-content__link">Page 1</a>
                     </li>
@@ -73,7 +73,7 @@
 
         </div>
         <!-- /.header-top-wrapper -->
-          <div class="navbar-bottom">
+          <div class="navbar navbar-bottom">
             <nav>
               <ul class="navbar__ul">
                 <li class="navbar__item navbar__item--mr--14">
@@ -81,7 +81,7 @@
                 </li>
                 <li class="navbar__item dropdown">
                   <a href="#" class="navbar__link">Лэндинги</a>
-                  <ul class="dropdown-content">
+                  <ul class="dropdown-content" id="myDropdown">
                     <li class="dropdown-content__item">
                       <a href="#" class="dropdown-content__link">Project 1</a>
                     </li>
@@ -95,7 +95,7 @@
                 </li>
                 <li class="navbar__item navbar__item--mr--28 dropdown">
                   <a href="#" class="navbar__link">Страницы</a>
-                  <ul class="dropdown-content">
+                  <ul class="dropdown-content" id="myDropdown">
                     <li class="dropdown-content__item">
                       <a href="#" class="dropdown-content__link">Page 1</a>
                     </li>
@@ -127,7 +127,7 @@
               Мы даем результаты, помогающие Вам добиться экономии средств и
               времени без риска или накладных расходов на управление
             </p>
-            <button class="hero__button">Наше портфолио</button>
+            <button type="button" class="hero__button">Наше портфолио</button>
              <img
             src="img/hero-bg-mobile.png"
             class="hero__bg hero__bg--mobile--visible"
@@ -151,6 +151,27 @@
       <!-- /.container -->
       
     </header>
+    <section class="partners">
+    <div class="container">
+      <h3 class="section__title">Наши партнеры</h2>
+        <div class="partners-wrapper">
+          <h2 class="partners__title">Мы работали с ними,
+Мы&nbsp;доверяем&nbsp;друг другу</h2>
+<p class="partners__description">Наша команда предоставляет творческое образование высокого уровня для глобальной аудитории студентов, преподавателей и предпринимателей со всего мира</p>
+        </div>
+        <!-- /.partners-wrapper -->
+    <div class="partners-list">
+      <ul class="partners-list__ul">
+      <li class="partners-list__item"><img class="partners-list__image" src="img/partners/slack.png" alt=""></li>
+      <li class="partners-list__item"><img class="partners-list__image" src="img/partners/netflix.png" alt=""></li>
+      <li class="partners-list__item"><img class="partners-list__image" src="img/partners/fitbit.png" alt=""></li>
+      <li class="partners-list__item"><img class="partners-list__image" src="img/partners/google.png" alt=""></li>
+     <li class="partners-list__item"> <img class="partners-list__image" src="img/partners/airbnb.png" alt=""></li>
+      </ul>
+    </div>
+    <!-- /.partners-list -->
+    </div>  
+    </section>
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->

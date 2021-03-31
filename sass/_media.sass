@@ -11,6 +11,10 @@
     &__bg
       width: 580px
       bottom: 90px
+  .partners
+    &__title
+      margin-right: 55px
+      font-size: 32px
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -30,11 +34,31 @@
       margin-bottom: 45px
     &__bg
       width: 500px
+  .section
+    &__title
+      text-align: center
+  .partners
+    &__title
+      min-width: 48%
+    &__description
+      min-width: 48%
+      font-size: 16px
+    &-list
+      &__item
+        &:nth-child(4)
+          min-width: 140px
+        &:nth-child(5)
+          display: none
+
 @media (max-width: 768px)
   .container
     max-width: 560px
     padding: 0 18px
+  .header
+    min-height: 760px
   .navbar
+    padding-left: 18px
+    padding-right: 18px
     &-wrapper
       display: none
     &__menu
@@ -93,6 +117,41 @@
         height: 2px
         background-color: $primary
         border-radius: 30px
+  .dropdown
+    &-content
+      margin-left: 100px
+      background-color: #183b56
+      color: white
+  .section
+    &__title
+      margin-bottom: 24px
+  .partners
+    padding-top: 70px
+    padding-bottom: 80px
+    &-wrapper
+      padding-left: 20px
+      padding-right: 20px
+      flex-wrap: wrap
+      justify-content: center
+      margin-bottom: 35px
+    &__title
+      width: 100%
+      text-align: center
+      margin-right: 0
+      font-size: 28px
+      line-height: 29px
+      margin-bottom: 15px
+    &__description
+      width: 100%
+      text-align: center
+    &-list
+      &__ul
+        flex-wrap: wrap
+        justify-content: center
+      &__item
+        padding: 30px
+        &:nth-child(4)
+          max-width: 120px
 @media (max-width: 576px)
   .container
     width: 100%
@@ -142,12 +201,43 @@
         &--visible
           display: block
           position: static
-@media (min-width: 993px)
-  .header
-    &-left
+  .partners
+    &-wrapper
+      margin-bottom: 25px
+    &__description
+      font-size: 13px
+      line-height: 24px
+    &-list
+      justify-content: center
       &__item
-        &:hover
-          color: $secondary
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+          padding: 0
+          min-width: 45%
+          padding: 0px 20px 18px 20px
+        &:nth-child(3)
+          padding: 0px 0px 0px 30px
+        &:nth-child(2)
+          padding: 0px 26px 18px 20px
+        &:nth-child(4)
+          padding: 7px 26px 18px 20px
+      &__image
+        &:nth-child(1)
+          max-width: 104px
+        &:nth-child(2)
+          max-width: 94px
+        &:nth-child(3)
+          max-width: 94px
+          padding: 10px
+        &:nth-child(1)
+          max-width: 94px
+  .section
+    &__title
+      margin-left: 30px
+@media (min-width: 993px)
+  .navbar
+    &__item
+      &:hover
+        color: $secondary
     &__button
       &:hover
         color: $light
