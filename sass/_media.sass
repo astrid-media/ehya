@@ -21,6 +21,27 @@
   .whatwedo
     &__title
       width: 40%
+  .slider
+    &__items
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      max-width: 100%
+      &:nth-child(1)
+        margin-left: 0px
+    &__item
+      flex: 0 0 50%
+      flex-wrap: wrap
+      max-width: 400px
+      margin-right: 20px
+      &:nth-child(1)
+        margin-left: 0px
+      &:last-child
+        margin-right: 0px
+      &-content
+        max-width: 400px
+    &__control
+      display: none
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -63,7 +84,17 @@
   .services
     &__item
       max-width: 48%
-
+  .portfolio
+    &__title
+      text-align: center
+  .slider
+    &__item
+      max-width: 350px
+      &-content
+        max-width: 350px
+    &__title
+      font-size: 26px
+      line-height: 32px
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -124,6 +155,8 @@
     &__bg
       width: 400px
       bottom: 0
+    &__button
+      margin: auto
   .menu
     &-button
       &__line
@@ -140,7 +173,7 @@
     &-title
       margin-bottom: 24px
   .partners
-    padding-top: 70px
+    padding-top: 73px
     padding-bottom: 80px
     &-wrapper
       padding-left: 20px
@@ -148,6 +181,7 @@
       flex-wrap: wrap
       justify-content: center
       margin-bottom: 35px
+      margin-top: 0
     &__title
       width: 100%
       text-align: center
@@ -178,12 +212,22 @@
     &__item
       padding-bottom: 15px
       max-width: 100%
+  .slider
+    &__item
+      max-width: 270px
+      &-content
+        max-width: 270px
+    &__subtitle
+      font-size: 12px
+    &__title
+      font-size: 20px
+      line-height: 28px
 @media (max-width: 576px)
   .container
     width: 100%
     padding: 0
   .header
-    min-height: 930px
+    min-height: 785px
   .navbar
     padding-bottom: 45px
     padding-left: 20px
@@ -216,7 +260,7 @@
       padding: 13px 24px
     &__down
       padding: 14px 15px
-      bottom: 190px
+      bottom: 46px
       right: 50%
       transform: translateX(50%)
       width: 48px
@@ -272,6 +316,10 @@
   .section
     &-title
       margin-left: 30px
+      &--ml
+        &--15
+          margin-left: 15px
+          margin-bottom: 16px
   .whatwedo
     padding-top: 17px
     &-wrapper
@@ -322,6 +370,35 @@
   .research
     order: 6
     padding-top: 71px
+  .portfolio
+    padding-top: 39px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-top: 16px
+      margin-bottom: 36px
+  .slider
+    &__container
+      padding-left: 20px
+      padding-right: 20px
+      text-align: center
+    &__image
+      height: 300px
+    &__text
+      padding: 20px 0
+      max-width: 270px
+    &__item
+      max-width: 100%
+      min-height: 404px
+      margin-bottom: 23px
+      &-content
+        max-width: 100%
+        height: 404px
+    &__subtitle
+      font-size: 14px
+    &__title
+      font-size: 24px
+      line-height: 32px
 @media (min-width: 993px)
   .navbar
     &__item

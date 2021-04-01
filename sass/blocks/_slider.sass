@@ -14,8 +14,10 @@
     flex: 0 0 33.3333333333%
     margin-right: 30px
     max-width: 360px
-    height: 600px
+    min-height: 550px
     flex-direction: column
+    border: 1px solid #DDE6F4
+    border-radius: 8px 8px 0px 0px
     &:last-child
       margin-right: 180px
     &-content
@@ -33,7 +35,7 @@
     object-fit: cover
     margin-bottom: -3px
   &__text
-    padding: 24px 17px 24px 24px
+    padding: 23px 17px 24px 24px
     border: 1px solid #DDE6F4
     border-radius: 0px 0px 8px 8px
     &--border
@@ -53,6 +55,7 @@
     line-height: 20px
     display: block
     margin-bottom: 16px
+    color: $secondary
   &__control
     position: absolute
     top: -70px
