@@ -52,16 +52,10 @@ menuButton.addEventListener('click', function () {
 });
 
 
-
-$('.portfolio-wrapper').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  arrows: true,
-  variableWidth: true
-});
+const $slider = document.querySelector('[data-slider="chiefslider"]');
+    const slider = new ChiefSlider($slider, {
+      loop: false
+    });
 
 
 });

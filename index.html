@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/chiefslider.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>ehya - Агентство цифровых продуктов!</title>
   </head>
@@ -200,10 +201,42 @@
       
       </div>
       <div class="portfolio-wrapper">
-        <div class="portfolio__item"><img src="img/projects/project-1.png" alt="" class="portfolio__image"><span class="portfolio__subtitle"></span><span class="portfolio title"></span></div>
+       <!-- <div class="portfolio__item"><img src="img/projects/project-1.png" alt="" class="portfolio__image"><span class="portfolio__subtitle"></span><span class="portfolio title"></span></div>
         <div class="portfolio__item"><img src="img/projects/project-2.png" alt="" class="portfolio__image"><span class="portfolio__subtitle"></span><span class="portfolio title"></span></div>
         <div class="portfolio__item"><img src="img/projects/project-3.png" alt="" class="portfolio__image"><span class="portfolio__subtitle"></span><span class="portfolio title"></span></div>
         <div class="portfolio__item"><img src="img/projects/project-4.png" alt="" class="portfolio__image"><span class="portfolio__subtitle"></span><span class="portfolio title"></span></div>
+    -->
+
+    <div class="slider" data-slider="chiefslider">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content"><img src="img/projects/project-1.png" alt="" class="portfolio__image"><span class="portfolio__subtitle">1</span><span class="portfolio title"></span></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content"><img src="img/projects/project-2.png" alt="" class="portfolio__image"><span class="portfolio__subtitle">2</span><span class="portfolio title"></span></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content"><img src="img/projects/project-3.png" alt="" class="portfolio__image"><span class="portfolio__subtitle">3</span><span class="portfolio title"></span></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content"><img src="img/projects/project-4.png" alt="" class="portfolio__image"><span class="portfolio__subtitle">4</span><span class="portfolio title"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="slider__control" data-slide="prev"></a>
+      <a href="#" class="slider__control" data-slide="next"></a>
+    </div>
       </div>
       <!-- /.portfolio-wrapper -->
     </section>
@@ -255,7 +288,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/chiefslider.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
