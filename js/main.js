@@ -57,5 +57,18 @@ const $slider = document.querySelector('[data-slider="chiefslider"]');
       loop: false
     });
 
+    const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  slidesPerView: 2,
+    loop: true,
+    spaceBetween: 30,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
 
 });
