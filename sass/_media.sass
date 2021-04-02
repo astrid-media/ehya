@@ -127,6 +127,9 @@
   .reviews
     &__button
       top: 210px
+  .talk
+    &-wrapper
+      padding: 0 20px
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -287,6 +290,12 @@
     &-button
       &-disabled
         display: none
+  .talk
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      font-size: 42px
+      line-height: 56px
 @media (max-width: 576px)
   .container
     width: 100%
@@ -472,6 +481,7 @@
       font-size: 24px
       line-height: 32px
   .friends
+    padding-bottom: 24px
     &-wrapper
       justify-content: space-between
     &__container
@@ -529,6 +539,26 @@
       font-size: 28px
       line-height: 36px
       margin-bottom: 53px
+  .talk
+    padding-top: 65px
+    padding-bottom: 64px
+    &__title
+      font-size: 28px
+      line-height: 30px
+      margin-bottom: 32px
+    &__text
+      font-size: 16px
+      line-height: 27px
+      margin-bottom: 12px
+    &__button
+      width: 170px
+    &__bg
+      &--mobile
+        &--visible
+          display: block
+          top: 210px
+        &--hidden
+          display: none
 @media (min-width: 993px)
   .navbar
     &__item

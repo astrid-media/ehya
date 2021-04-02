@@ -1,10 +1,13 @@
 .talk
   position: relative
-  height: 346px
   background-color: $title-color
   width: 100%
   padding-top: 60px
+  padding-bottom: 80px
   text-align: center
+  &-wrapper
+    z-index: 10
+    position: relative
   &__title
     font-family: Roboto
     font-weight: bold
@@ -36,3 +39,6 @@
     position: absolute
     right: 0
     top: 0
+    &--mobile
+      &--visible
+        display: none
