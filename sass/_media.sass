@@ -496,4 +496,16 @@
   .friends
     &__link
       &:hover
-        border-bottom: 1px solid $secondary
+        display: flex
+        width: 138px
+        margin: auto
+        justify-content: space-between
+        align-items: center
+        animation-name: move
+        animation-duration: 0.5s
+        animation-fill-mode: forwards
+  @keyframes move
+    0%
+      width: 138px
+    100%
+      width: 150px
