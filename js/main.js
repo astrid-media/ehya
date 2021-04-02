@@ -60,12 +60,12 @@ const $slider = document.querySelector('[data-slider="chiefslider"]');
     const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   slidesPerView: 2,
-    loop: true,
+    loop: false,
     spaceBetween: 30,
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
   },
 
  

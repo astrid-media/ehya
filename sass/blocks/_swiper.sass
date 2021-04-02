@@ -1,13 +1,16 @@
 .swiper
   &-container
     width: 100%
+    position: static
   &-slide
     width: 45%
-    padding: 40px
+    padding: 40px 40px 35px 40px
     border: 1px solid #E5EAF4
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
     border-radius: 8px
-    min-height: 281px
+    &--pb
+      &--32
+        padding-bottom: 27px
     &-wrapper
       display: flex
     &__avatar
@@ -39,3 +42,6 @@
       &--lh
         &--26
           line-height: 26px
+  &-button
+    &-disabled
+      opacity: 0
