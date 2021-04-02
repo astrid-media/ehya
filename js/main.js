@@ -57,11 +57,23 @@ const $slider = document.querySelector('[data-slider="chiefslider"]');
       loop: false
     });
 
-    const swiper = new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swiper-container--mobile--hidden', {
   // Optional parameters
   slidesPerView: 2,
     loop: false,
     spaceBetween: 30,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+
+ 
+});
+  const swiperMobile = new Swiper('.swiper-container--mobile--visible', {
+  // Optional parameters
+  slidesPerView: 1,
+    loop: false,
   // Navigation arrows
   navigation: {
     nextEl: '.reviews__button--next',

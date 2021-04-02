@@ -1,16 +1,24 @@
 .swiper
   &-container
-    width: 100%
+    max-width: 1140px
     position: static
+    &--mobile
+      &--visible
+        display: none
+  &-wrapper
+    padding-top: 15px
   &-slide
     width: 45%
     padding: 40px 40px 35px 40px
     border: 1px solid #E5EAF4
-    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
     border-radius: 8px
+    height: auto
     &--pb
       &--32
         padding-bottom: 27px
+    &--bsh
+      &--yes
+        box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
     &-wrapper
       display: flex
     &__avatar
@@ -37,7 +45,7 @@
       font-size: 14px
       line-height: 24px
       font-weight: 400
-      padding-top: 30px
+      margin-top: 30px
       margin: 0
       &--lh
         &--26

@@ -50,6 +50,9 @@
       display: none
     &__title
       font-size: 28px
+  .reviews
+    &__container
+      text-align: center
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -111,6 +114,16 @@
       font-size: 14px
     &__link
       font-size: 16px
+  .swiper
+    &-container
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: block
+    &-slide
+      &-wrapper
+        justify-content: center
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -255,6 +268,22 @@
     &__item
       max-width: 45%
       margin-bottom: 32px
+  .reviews
+    &__button
+      position: static
+      display: inline-block
+      margin-top: 13px
+      background-size: 64px
+      &--next
+        margin-right: 15px
+      &-group
+        display: flex
+        justify-content: center
+        align-items: center
+  .swiper
+    &-button
+      &-disabled
+        display: none
 @media (max-width: 576px)
   .container
     width: 100%
@@ -355,6 +384,9 @@
           margin-bottom: 16px
         &--none
           margin-left: 0
+      &--mr
+        &--40
+          margin-right: 40px
   .whatwedo
     padding-top: 17px
     &-wrapper
@@ -465,6 +497,34 @@
       width: 100%
       left: 50%
       transform: translateX(-50%)
+  .swiper
+    &-container
+      max-width: 91%
+    &-slide
+      padding: 20px 10px 18px 9px
+      &-wrapper
+        flex-wrap: wrap
+      &__user
+        width: 100%
+      &__avatar
+        margin-bottom: 16px
+        margin-right: 0
+      &__name
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 7px
+      &__position
+        font-size: 11px
+        line-height: 27px
+        margin-right: 10px
+      &__text
+        margin-top: 6px
+        line-height: 22px
+  .reviews
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 53px
 @media (min-width: 993px)
   .navbar
     &__item
