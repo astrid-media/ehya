@@ -216,8 +216,8 @@
   .dropdown
     &-content
       margin-left: 100px
-      background-color: #183b56
-      color: white
+      background-color: $bg
+      color: $primary
   .section
     &-title
       margin-bottom: 24px
@@ -588,6 +588,7 @@
   .talk
     padding-top: 65px
     padding-bottom: 64px
+    overflow: hidden
     &__title
       font-size: 28px
       line-height: 30px
@@ -603,6 +604,7 @@
         &--visible
           display: block
           top: 210px
+          overflow: hidden
         &--hidden
           display: none
   .footer
@@ -651,7 +653,14 @@
     margin-right: 0
   .copyright
     display: none
-
+  .modal
+    &__dialog
+      width: 95%
+      padding: 15px 30px
+    &__title
+      padding: 0 10px
+    &__button
+      margin-bottom: 10px
 @media (min-width: 993px)
   .navbar
     &__item
@@ -680,6 +689,11 @@
       &:hover
         box-shadow: 0 0 5px $secondary
         transition: .2s
+  .thankyou
+    &__link
+      &:hover
+        box-shadow: 0 0 5px $secondary
+        transition: .2s
   .friends
     &__link
       &:hover
@@ -697,30 +711,48 @@
         animation-name: heartbeat
         animation-duration: 3s
         cursor: pointer
-  @keyframes heartbeat
-
+  .navbar
+    &__button
+      &:hover
+        transition: 0.4s ease
+        background: #4F95DA
+  .talk
+    &__button
+      &:hover
+        background: transparent
+        border-top: 1px solid $light
+        border-bottom: 1px solid $light
+        border-radius: 0
+        color: $light
+        transition: 0.3s ease
+  .footer
+    &-social
+      &__item
+        &:hover
+          animation-name: littlebig
+          animation-duration: 1s
+          animation-fill-mode: forwards
+    &-list
+      &__link
+        &:hover
+          color: $secondary
+  @keyframes littlebig
     0%
-
       transform: scale( 1 )
-
-    20%
-
-      transform: scale( 1.1 )
-
-    40%
-
-      transform: scale( 1 )
-
-    60%
-
-      transform: scale( 1.1 )
-
-    80%
-
-      transform: scale( 1 )
-
     100%
-
+      transform: scale( 1.2 )
+  @keyframes heartbeat
+    0%
+      transform: scale( 1 )
+    20%
+      transform: scale( 1.1 )
+    40%
+      transform: scale( 1 )
+    60%
+      transform: scale( 1.1 )
+    80%
+      transform: scale( 1 )
+    100%
       transform: scale( 1.1 )
 
   @keyframes move
