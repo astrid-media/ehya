@@ -329,6 +329,11 @@
       margin: 10px auto
     &__text
       margin: 0 20px
+  .second
+    &-header
+      min-height: auto
+  .thankyou
+    margin-top: 100px
 @media (max-width: 576px)
   .container
     width: 100%
@@ -549,12 +554,14 @@
       line-height: 19px
     &__link
       font-size: 11px
-      line-height: 20px
+      line-height: 18px
       position: absolute
       bottom: 0
       width: 100%
       left: 50%
       transform: translateX(-50%)
+    &__arrow
+      width: 10px
   .swiper
     &-container
       max-width: 91%
@@ -661,6 +668,15 @@
       padding: 0 10px
     &__button
       margin-bottom: 10px
+  .second
+    &-header
+      min-height: auto
+  .thankyou
+    &__container
+      width: 95%
+    &__title
+      font-size: 28px
+      line-height: 36px
 @media (min-width: 993px)
   .navbar
     &__item
@@ -768,3 +784,4 @@
     &-bottom
       &--visible
         overflow-y: scroll
+        overflow-x: hidden
