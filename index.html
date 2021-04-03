@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/chiefslider.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>ehya - Агентство цифровых продуктов!</title>
   </head>
@@ -20,7 +21,7 @@
       <div class="container">
         <div class="navbar navbar--mobile--fixed">
           <a href="/ehya"
-            ><img src="img/logo-top.png" alt="" class="header__logo"
+            ><img src="img/logo-top.png" alt="Logo" class="header__logo"
           /></a>
           <div class="navbar-wrapper">
             <nav>
@@ -129,13 +130,13 @@
               Мы даем результаты, помогающие Вам добиться экономии средств и
               времени без риска или накладных расходов на управление
             </p>
-            <a href="#" class="hero__button">Наше портфолио</a>
+            <a href="#portfolio" class="hero__button">Наше портфолио</a>
             <img
               src="img/hero-bg-mobile.png"
               class="hero__bg hero__bg--mobile--visible"
               alt="Image: Background"
             />
-            <a href="#" class="hero__down">
+            <a href="#partners" class="hero__down">
               <img src="img/down.svg" alt="Icon: Down" class="hero__icon" />
             </a>
           </div>
@@ -150,7 +151,7 @@
       </div>
       <!-- /.container -->
     </header>
-    <section class="partners">
+    <section class="partners" id="partners">
       <div class="container">
         <h3 class="section-title">Наши партнеры</h3>
         <div class="partners-wrapper">
@@ -232,7 +233,7 @@
             <img
               class="services__icon oval"
               src="img/service-icon/oval.png"
-              alt="Icon: oval"
+              alt="Icon: Oval"
             /><span class="services__title services__title--size--20"
               >Брендинг</span
             ><span class="services__description"
@@ -254,7 +255,7 @@
             <img
               class="services__icon services__icon--left--21"
               src="img/service-icon/polygon-fife.png"
-              alt="Icon: polygon"
+              alt="Icon: Polygon"
             /><span class="services__title">UI/UX Дизайн</span
             ><span class="services__description"
               >Создание цифрового продукта с красивым и интуитивно понятным
@@ -265,7 +266,7 @@
             <img
               class="services__icon"
               src="img/service-icon/rectangle.png"
-              alt="Icon: rectangle"
+              alt="Icon: Rectangle"
             /><span class="services__title services__title--size--20"
               >Microstock</span
             ><span class="services__description"
@@ -276,7 +277,7 @@
             <img
               class="services__icon"
               src="img/service-icon/triangle.png"
-              alt="Icon: triangle"
+              alt="Icon: Triangle"
             /><span class="services__title">Соцсети</span
             ><span class="services__description"
               >Планирование и поддержка социальных сетей для широкой
@@ -287,7 +288,7 @@
             <img
               class="services__icon"
               src="img/service-icon/polygon-four.png"
-              alt="Icon: polygon"
+              alt="Icon: Polygon"
             /><span class="services__title">Исследование</span
             ><span class="services__description"
               >Помощь исследовательскому стартапу или бренду в удовлетворении
@@ -299,7 +300,12 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="portfolio">
+    <section
+      class="portfolio"
+      id="portfolio"
+      data-aos="fade-up"
+      data-aos-easing="ease"
+    >
       <div class="container portfolio__container">
         <h3 class="section-title section-title--ml--15">Портфолио</h3>
         <h2 class="portfolio__title title">Наши проекты</h2>
@@ -316,7 +322,7 @@
                   >
                     <img
                       src="img/projects/project-1.png"
-                      alt=""
+                      alt="Image: Project website"
                       class="slider__image"
                     />
                     <div class="slider__text">
@@ -329,7 +335,7 @@
                   >
                     <img
                       src="img/projects/project-1-mobile.png"
-                      alt=""
+                      alt="Image: Project website"
                       class="slider__image"
                     />
                     <div class="slider__text slider__text--pt--18">
@@ -346,7 +352,7 @@
                   >
                     <img
                       src="img/projects/project-2.png"
-                      alt=""
+                      alt="Image: Project Design"
                       class="slider__image"
                     />
 
@@ -361,7 +367,7 @@
                   >
                     <img
                       src="img/projects/project-2-mobile.png"
-                      alt=""
+                      alt="Image: UI/UX Design"
                       class="slider__image"
                     />
                     <div class="slider__text slider__text--border--none">
@@ -378,7 +384,7 @@
                   >
                     <img
                       src="img/projects/project-3.png"
-                      alt=""
+                      alt="Image: Project apps"
                       class="slider__image"
                     />
 
@@ -393,7 +399,7 @@
                   >
                     <img
                       src="img/projects/project-3-mobile.png"
-                      alt=""
+                      alt="Image: Project apps"
                       class="slider__image"
                     />
                     <div class="slider__text">
@@ -411,7 +417,7 @@
                   >
                     <img
                       src="img/projects/project-4.png"
-                      alt=""
+                      alt="Image: Project illustration"
                       class="slider__image"
                     />
 
@@ -425,7 +431,7 @@
                   >
                     <img
                       src="img/projects/project-4-mobile.png"
-                      alt=""
+                      alt="Image: Project illustration"
                       class="slider__image"
                     />
                     <div class="slider__text slider__text--border--none">
@@ -627,14 +633,14 @@
               href="https://www.instagram.com/"
               target="_blank"
               >Подписаться
-              <img src="img/icon/right-blue.png" alt="Icon: arrow-right"
+              <img src="img/icon/right-blue.png" alt="Icon: Arrow-right"
             /></a>
           </div>
           <div class="friends__item">
             <div class="friends__image">
               <img
                 src="img/icon/twitter.png"
-                alt="Icon: twitter"
+                alt="Icon: Twitter"
                 class="friends__icon"
               />
             </div>
@@ -643,14 +649,14 @@
               >Для случайных мыслей и интересных вещей</span
             ><a class="friends__link" href="https://twitter.com/" target="blank"
               >Подписаться
-              <img src="img/icon/right-blue.png" alt="Icon: arrow-right"
+              <img src="img/icon/right-blue.png" alt="Icon: Arrow-right"
             /></a>
           </div>
           <div class="friends__item">
             <div class="friends__image">
               <img
                 src="img/icon/dribbble.png"
-                alt="Icon: dribble"
+                alt="Icon: Dribble"
                 class="friends__icon"
               />
             </div>
@@ -662,14 +668,14 @@
               href="https://dribbble.com/"
               target="_blank"
               >Подписаться
-              <img src="img/icon/right-blue.png" alt="Icon: arrow-right"
+              <img src="img/icon/right-blue.png" alt="Icon: Arrow-right"
             /></a>
           </div>
           <div class="friends__item">
             <div class="friends__image">
               <img
                 src="img/icon/youtube.png"
-                alt="Icon: youtube"
+                alt="Icon: Youtube"
                 class="friends__icon"
               />
             </div>
@@ -681,7 +687,7 @@
               href="https://www.youtube.com/"
               target="_blank"
               >Подписаться
-              <img src="img/icon/right-blue.png" alt="Icon: arrow-right"
+              <img src="img/icon/right-blue.png" alt="Icon: Arrow-right"
             /></a>
           </div>
         </div>
@@ -692,12 +698,12 @@
       <img
         class="talk__bg talk__bg--mobile--hidden"
         src="img/bg-oval-talk.png"
-        alt="Background: oval"
+        alt="Background: Oval"
       />
       <img
         class="talk__bg talk__bg--mobile--visible"
         src="img/bg-oval-talk-mobile.png"
-        alt="Background: oval"
+        alt="Background: Oval"
       />
       <div class="talk-wrapper">
         <h2 class="talk__title">Мы готовы к сложным проектам</h2>
@@ -928,6 +934,7 @@
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/chiefslider.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

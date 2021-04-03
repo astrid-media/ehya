@@ -82,5 +82,18 @@ const $slider = document.querySelector('[data-slider="chiefslider"]');
 
  
 });
+AOS.init();
+$(document).on("click", ".hero__button", function(e) {
+    e.preventDefault();
+    var id  = $(this).attr('href');
+    var top = $(id).offset().top; // получаем координаты блока
+    $('body, html').animate({scrollTop: top}, 1000); // плавно переходим к блоку
+});
+$(document).on("click", ".hero__down", function(e) {
+    e.preventDefault();
+    var id  = $(this).attr('href');
+    var top = $(id).offset().top; // получаем координаты блока
+    $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
+});
 
 });
