@@ -1,5 +1,7 @@
 *
   box-sizing: border-box
+html
+  position: relative
 body
   font-family: 'Open Sans', sans-serif
   color: $text-color
@@ -56,3 +58,16 @@ button
   line-height: 32px
   color: $text-color
   margin: 0
+.top
+  background: none
+  border-radius: 2000px
+  padding: 19px 18px 16px 18px
+  width: 54px
+  height: 56px
+  display: block
+  border: 2px solid $text-color
+  position: fixed
+  bottom: 50px
+  right: 50px
+  &__icon
+    transform: scale(1,-1)

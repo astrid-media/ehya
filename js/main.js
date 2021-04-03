@@ -95,5 +95,10 @@ $(document).on("click", ".hero__down", function(e) {
     var top = $(id).offset().top; // получаем координаты блока
     $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
 });
-
+$(document).on("click", ".top", function(e) {
+    e.preventDefault();
+    var id  = $(this).attr('href');
+    var top = $(id).offset().top; // получаем координаты блока
+    $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
+});
 });
