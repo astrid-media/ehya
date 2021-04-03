@@ -20,21 +20,28 @@
     margin-bottom: 30px
   &-social
     display: flex
+    flex-wrap: wrap
     align-items: center
     list-style: none
     margin: 0
     padding: 0
     &__item
       margin-right: 24px
+      margin-bottom: 15px
       &--mr
         &--20
           margin-right: 17px
+        &--none
+          margin-right: 0
   &-rightside
     display: flex
   &-list
     &__title
       margin: 0
       margin-bottom: 36px
+      &--mobile
+        &--visible
+          display: none
     &__ul
       list-style: none
       margin: 0
@@ -48,6 +55,9 @@
     &__link
       text-decoration: none
       color: $footer-link
+      &--mobile
+        &--visible
+          display: none
 .products
   width: 165px
   margin-left: 52px
